@@ -1,6 +1,25 @@
 header {
   height: 60vh;
   text-align: center;
+  position: relative;
+}
+
+.result {
+  position: absolute;
+  width: 150px;
+  text-align: center;
+  top: 0;
+  left: 80%;
+  transform: translateX(-100%);
+  border: 1px dashed $secound-color;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top: none;
+
+  p {
+    display: inline-block;
+    padding: 2px;
+  }
 }
 
 .buttons {
