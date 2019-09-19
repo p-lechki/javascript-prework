@@ -58,7 +58,7 @@ header {
   width: 33.333%;
 }
 
-button {
+.btn {
   height: 110px;
   width: 110px;
   border: 5px solid #e5e5e5;
@@ -66,16 +66,22 @@ button {
   border-radius: 50%;
   cursor: pointer;
   margin-bottom: 10px;
+  transition: all ease 0.5s;
 }
 
-button .far {
+.btn .far {
   font-size: 5em;
   line-height: 100px;
   color: #eeeeee;
 }
 
-button :focus {
-  border: none;
+.btn:hover {
+  border-color: #1089ff;
+  background-color: #e5e5e5;
+}
+
+.btn:hover .far {
+  color: #1089ff;
 }
 
 .messages {
