@@ -1,0 +1,25 @@
+*,
+*:after,
+*:before {
+  padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  color: $font-color;
+  background-color: $bg-color;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

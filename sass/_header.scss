@@ -1,0 +1,41 @@
+header {
+  height: 60vh;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+
+  .card {
+    width: 33.333%;
+  }
+}
+
+button {
+  height: 110px;
+  width: 110px;
+  border: 5px solid $secound-color;
+  background-color: $primary-color;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-bottom: 10px;
+
+  .far {
+    font-size: 5em;
+    line-height: 100px;
+    color: $font-color;
+  }
+
+  :focus {
+    border: none;
+  }
+}
+
+.messages {
+  margin-top: 50px;
+  font-size: 1.6em;
+}

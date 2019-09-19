@@ -2,48 +2,53 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Kamień, papier, nożyce</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>Kamień, papier, nożyce</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div id="buttons">
-                <div class="card">
-                    <button id="button-rock"><i class="far fa-hand-rock"></i></button>
-                    <h1 class="card-title">Kamień</h1>
-                </div>
-                <div class="card">
-                    <button id="button-paper"><i class="far fa-hand-paper"></i></button>
-                    <h1 class="card-title">papier</h1>
-                </div>
-                <div class="card">
-                    <button id="button-scissors"><i class="far fa-hand-scissors"></i></button>
-                    <h1 class="card-title">Nozyce</h1>
-                </div>
-            </div>
-            <div id="messages"></div>
+  <header>
+    <div class="container">
+      <div id="buttons" class="buttons">
+        <div class="card">
+          <button id="button-rock"><i class="far fa-hand-rock"></i></button>
+          <h1 class="card-title">Kamień</h1>
         </div>
-    </header>
-    <section class="description">
-        <div class="container">
-            <h1 class="title">Kamień, papier, nożce</h1>
-            <h2 class="subtitle">Twoim przeciwnikiem jest super inteligentny i ultra nowoczesny komputer</h2>
-            <p class="info">Wybierz odpowiedni przycisk na górze, niech lost zdecyduje o twojej wyrganej bądź
-                przegranej.</p>
-            <div class="desc">
-                <h3 class="desc-title">Pamietaj:</h3>
-                <p>Kamień stępi nozyce</p>
-                <p>Nozyce przetną papier</p>
-                <p>Papier owinie kamień</p>
-            </div>
+        <div class="card">
+          <button id="button-paper"><i class="far fa-hand-paper"></i></button>
+          <h1 class="card-title">Papier</h1>
         </div>
-    </section>
-    <script src="js/functions.js"></script>
-    <script src="js/script.js"></script>
+        <div class="card">
+          <button id="button-scissors"><i class="far fa-hand-scissors"></i></button>
+          <h1 class="card-title">Nożyce</h1>
+        </div>
+      </div>
+      <div id="messages" class="messages"></div>
+    </div>
+  </header>
+  <section class="description">
+    <div class="container">
+      <div class="flex-wrapper">
+        <div class="game-info">
+          <h1 class="title">Kamień, papier, nożce</h1>
+          <h2 class="subtitle">Twoim przeciwnikiem jest super inteligentny<br /> i ultra nowoczesna AI</h2>
+          <p class="info">Wybierz odpowiedni przycisk na górze, niech lost zdecyduje o twojej wyrganej bądź
+            przegranej.</p>
+        </div>
+        <div class="desc">
+          <h3 class="desc-title">Pamietaj:</h3>
+          <p>Kamień stępi nożyce</p>
+          <p>Nożyce przetną papier</p>
+          <p>Papier owinie kamień</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="js/functions.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
