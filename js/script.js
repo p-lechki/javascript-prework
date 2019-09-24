@@ -1,9 +1,7 @@
-var argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput,  playerWin = 0, computerWin = 0;
-
 const buttonRock = document.getElementById('button-rock');
 const buttonPaper = document.getElementById('button-paper');
 const buttonScissors = document.getElementById('button-scissors');
-
+let playerWin = 0, computerWin = 0;
 
 function buttonClicked(argButtonName) {
     clearMessages();
@@ -14,6 +12,7 @@ function buttonClicked(argButtonName) {
      * This function gets form user variable as argument & returns value 'rock', 'scissors' or 'paper', when users types wrong value she returs value 'stone'
      */
     function getMoveName(argMoveId) {
+      let randomNumber;
         console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
         if (argMoveId == 1) {
             return 'kamień';
@@ -31,6 +30,7 @@ function buttonClicked(argButtonName) {
      *  This function is to check who will win, she takes two arguments. Value which was choosen by user and value that was drawn by Math.random
      */
     function displayResult(argPlayerMove, argComputerMove) {
+        let playerMove, computerMove;
         console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
         if (argPlayerMove == 'papier' && argComputerMove == 'kamień') {
             printMessage('Wygrywasz!');
