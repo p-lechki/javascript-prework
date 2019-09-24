@@ -1,8 +1,8 @@
-var argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput, buttonRock, buttonPaper, buttonScissors, playerWin = 0, computerWin = 0;
+var argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput,  playerWin = 0, computerWin = 0;
 
-buttonRock = document.getElementById('button-rock');
-buttonPaper = document.getElementById('button-paper');
-buttonScissors = document.getElementById('button-scissors');
+const buttonRock = document.getElementById('button-rock');
+const buttonPaper = document.getElementById('button-paper');
+const buttonScissors = document.getElementById('button-scissors');
 
 
 function buttonClicked(argButtonName) {
